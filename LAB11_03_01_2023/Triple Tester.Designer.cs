@@ -77,6 +77,7 @@
             this.DataTypeComboBox.Name = "DataTypeComboBox";
             this.DataTypeComboBox.Size = new System.Drawing.Size(167, 28);
             this.DataTypeComboBox.TabIndex = 0;
+            this.DataTypeComboBox.SelectedValueChanged += new System.EventHandler(this.InputTypeComboBox_SelectedValueChanged);
             // 
             // ToStringButton
             // 
@@ -87,6 +88,7 @@
             this.ToStringButton.TabIndex = 1;
             this.ToStringButton.Text = "To String";
             this.ToStringButton.UseVisualStyleBackColor = true;
+            this.ToStringButton.Click += new System.EventHandler(this.ToStringButton_Click);
             // 
             // MethodsTestTextBox
             // 
@@ -107,6 +109,7 @@
             this.SortButton.TabIndex = 3;
             this.SortButton.Text = "Sort";
             this.SortButton.UseVisualStyleBackColor = true;
+            this.SortButton.Click += new System.EventHandler(this.SortButton_Click);
             // 
             // IntegerInputPanel
             // 
@@ -279,6 +282,7 @@
             this.PeopleComboBox.Name = "PeopleComboBox";
             this.PeopleComboBox.Size = new System.Drawing.Size(357, 28);
             this.PeopleComboBox.TabIndex = 11;
+            this.PeopleComboBox.SelectedIndexChanged += new System.EventHandler(this.PeopleComboBox_SelectedItemChanged);
             // 
             // EditPersonButton
             // 
@@ -288,6 +292,7 @@
             this.EditPersonButton.TabIndex = 10;
             this.EditPersonButton.Text = "Edit";
             this.EditPersonButton.UseVisualStyleBackColor = true;
+            this.EditPersonButton.Click += new System.EventHandler(this.EditPersonButton_Click);
             // 
             // ClearPeopleButton
             // 
@@ -297,6 +302,7 @@
             this.ClearPeopleButton.TabIndex = 9;
             this.ClearPeopleButton.Text = "Clear";
             this.ClearPeopleButton.UseVisualStyleBackColor = true;
+            this.ClearPeopleButton.Click += new System.EventHandler(this.ClearPeopleButton_Click);
             // 
             // AddPersonButton
             // 
@@ -306,6 +312,7 @@
             this.AddPersonButton.TabIndex = 8;
             this.AddPersonButton.Text = "Add";
             this.AddPersonButton.UseVisualStyleBackColor = true;
+            this.AddPersonButton.Click += new System.EventHandler(this.AddPersonButton_Click);
             // 
             // BirthDateLabel
             // 
@@ -373,6 +380,7 @@
             this.Indexer0Button.TabIndex = 7;
             this.Indexer0Button.Text = "Display [0]";
             this.Indexer0Button.UseVisualStyleBackColor = true;
+            this.Indexer0Button.Click += new System.EventHandler(this.Indexer0Button_Click);
             // 
             // Indexer1Button
             // 
@@ -383,6 +391,7 @@
             this.Indexer1Button.TabIndex = 8;
             this.Indexer1Button.Text = "Display [1]";
             this.Indexer1Button.UseVisualStyleBackColor = true;
+            this.Indexer1Button.Click += new System.EventHandler(this.Indexer1Button_Click);
             // 
             // Indexer2Button
             // 
@@ -393,6 +402,7 @@
             this.Indexer2Button.TabIndex = 9;
             this.Indexer2Button.Text = "Display [2]";
             this.Indexer2Button.UseVisualStyleBackColor = true;
+            this.Indexer2Button.Click += new System.EventHandler(this.Indexer2Button_Click);
             // 
             // SaveButton
             // 
@@ -403,6 +413,7 @@
             this.SaveButton.TabIndex = 6;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // ButtonsFlowPanel
             // 
@@ -483,4 +494,3 @@
         private System.Windows.Forms.ComboBox PeopleComboBox;
     }
 }
-
