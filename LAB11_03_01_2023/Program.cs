@@ -16,7 +16,7 @@ namespace LAB11_03_01_2023
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new TripleTester());
         }
     }
 }
